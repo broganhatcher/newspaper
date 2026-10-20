@@ -37,8 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'accounts',
+    'pages',
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 AUTH_USER_MODEL = "accounts.CustomUser"
 
@@ -70,7 +76,7 @@ TEMPLATES = [
 ]
 
 LOGIN_REDIRECT_URL = "home"
-LOGOUT_REDIRTECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
 WSGI_APPLICATION = 'newspaper.wsgi.application'
 
 
